@@ -30,13 +30,15 @@ function numberChangeFix(){
     boxes[8].innerHTML = getRandom(2000,5000);
 }
 
-for (var i = 0; i < 50; i++) {   
-    if(i<1){
-        setTimeout(numberChangeFix, (50-i)*50);
-    }
-    else{
-        setTimeout(numberChange, (50-i)*50);
-    }
-} 
+function spin(){
+    for (var i = 0; i < 50; i++) {   
+        if(i<1){
+            setTimeout(numberChangeFix, (50-i)*50);
+        }
+        else{
+            setTimeout(numberChange, (50-i)*50);
+        }
+    } 
+}
 
   
