@@ -16,6 +16,10 @@ body{
     font-weight: bold;
     font-size:50px;
 }
+
+#prize, #empty1, #empty2{
+  display:none;
+}
 .container{
     display:grid;
     grid-template-columns: 210px 210px 210px;
@@ -83,7 +87,7 @@ p{
   img{
     width:100%;
     position: relative;
-     top: 50%;
+    top: 50%;
     transform: translate(20%, -50%);
   }
   .image{

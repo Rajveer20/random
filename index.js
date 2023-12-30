@@ -30,15 +30,26 @@ function numberChangeFix(){
     boxes[8].innerHTML = getRandom(2000,5000);
 }
 
+function showPrize(){
+    document.getElementById("empty1").style.display="block";
+    document.getElementById("prize").style.display="block";
+    document.getElementById("empty2").style.display="block";
+}
+
 function spin(){
-    for (var i = 0; i < 50; i++) {   
+    
+    for (var i = 0; i < 70; i++) { 
         if(i<1){
-            setTimeout(numberChangeFix, (50-i)*50);
+            setTimeout(confetti, 3600);
+            setTimeout(showPrize, 3600);
+            setTimeout(numberChangeFix, (70-i)*50);
         }
         else{
-            setTimeout(numberChange, (50-i)*50);
+            setTimeout(numberChange, (70-i)*50);
         }
     } 
 }
+
+
 
   
