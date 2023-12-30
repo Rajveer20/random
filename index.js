@@ -56,6 +56,7 @@ function showPrize(){
     document.getElementById("empty1").style.display="block";
     document.getElementById("prize").style.display="block";
     document.getElementById("empty2").style.display="block";
+    document.getElementById("container").style.marginTop = "50px"; 
 }
 
 function spin(){
