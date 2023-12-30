@@ -87,11 +87,17 @@ p{
     border : none !important;
   }
 
-  img{
+  .image img{
     width:100%;
     position: relative;
     top: 50%;
-    transform: translate(20%, -50%);
+    margin-bottom:50px;
+    transform: translateX(20%)
+  }
+  #prize img{
+    margin-top:0;
+    transform: translate(20%,-50%);
+    position:relative;
   }
   .image{
     grid-column: 1 / span 2;
